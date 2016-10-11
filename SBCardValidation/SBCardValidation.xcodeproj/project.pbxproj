@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D2B4FE01DACE41600228155 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B4FDF1DACE41600228155 /* main.m */; };
+		2D2B4FE31DACE41600228155 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B4FE21DACE41600228155 /* AppDelegate.m */; };
+		2D2B4FE91DACE41600228155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B4FE71DACE41600228155 /* Main.storyboard */; };
+		2D2B4FEB1DACE41600228155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B4FEA1DACE41600228155 /* Assets.xcassets */; };
+		2D2B4FEE1DACE41600228155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B4FEC1DACE41600228155 /* LaunchScreen.storyboard */; };
+		2D2B4FFB1DACE47300228155 /* SBCardValidationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B4FFA1DACE47300228155 /* SBCardValidationViewController.m */; };
+		2D2B4FFE1DACE4D500228155 /* SBCardValidateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B4FFD1DACE4D500228155 /* SBCardValidateModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D2B4FDB1DACE41600228155 /* SBCardValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBCardValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2B4FDF1DACE41600228155 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D2B4FE11DACE41600228155 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D2B4FE21DACE41600228155 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D2B4FE81DACE41600228155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D2B4FEA1DACE41600228155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D2B4FED1DACE41600228155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D2B4FEF1DACE41600228155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2B4FF91DACE47300228155 /* SBCardValidationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCardValidationViewController.h; sourceTree = "<group>"; };
+		2D2B4FFA1DACE47300228155 /* SBCardValidationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCardValidationViewController.m; sourceTree = "<group>"; };
+		2D2B4FFC1DACE4D500228155 /* SBCardValidateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCardValidateModel.h; sourceTree = "<group>"; };
+		2D2B4FFD1DACE4D500228155 /* SBCardValidateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCardValidateModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D2B4FD81DACE41600228155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D2B4FD21DACE41600228155 = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FDD1DACE41600228155 /* SBCardValidation */,
+				2D2B4FDC1DACE41600228155 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D2B4FDC1DACE41600228155 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FDB1DACE41600228155 /* SBCardValidation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D2B4FDD1DACE41600228155 /* SBCardValidation */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FF51DACE43500228155 /* AppDelegate */,
+				2D2B4FF61DACE43F00228155 /* StoryBoard */,
+				2D2B4FF71DACE44900228155 /* Model */,
+				2D2B4FF81DACE44F00228155 /* Controller */,
+				2D2B4FEA1DACE41600228155 /* Assets.xcassets */,
+				2D2B4FEC1DACE41600228155 /* LaunchScreen.storyboard */,
+				2D2B4FEF1DACE41600228155 /* Info.plist */,
+				2D2B4FDE1DACE41600228155 /* Supporting Files */,
+			);
+			path = SBCardValidation;
+			sourceTree = "<group>";
+		};
+		2D2B4FDE1DACE41600228155 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FDF1DACE41600228155 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D2B4FF51DACE43500228155 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FE11DACE41600228155 /* AppDelegate.h */,
+				2D2B4FE21DACE41600228155 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2D2B4FF61DACE43F00228155 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FE71DACE41600228155 /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2D2B4FF71DACE44900228155 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FFC1DACE4D500228155 /* SBCardValidateModel.h */,
+				2D2B4FFD1DACE4D500228155 /* SBCardValidateModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2D2B4FF81DACE44F00228155 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B4FF91DACE47300228155 /* SBCardValidationViewController.h */,
+				2D2B4FFA1DACE47300228155 /* SBCardValidationViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D2B4FDA1DACE41600228155 /* SBCardValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D2B4FF21DACE41600228155 /* Build configuration list for PBXNativeTarget "SBCardValidation" */;
+			buildPhases = (
+				2D2B4FD71DACE41600228155 /* Sources */,
+				2D2B4FD81DACE41600228155 /* Frameworks */,
+				2D2B4FD91DACE41600228155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBCardValidation;
+			productName = SBCardValidation;
+			productReference = 2D2B4FDB1DACE41600228155 /* SBCardValidation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D2B4FD31DACE41600228155 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SANKARLAL;
+				TargetAttributes = {
+					2D2B4FDA1DACE41600228155 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D2B4FD61DACE41600228155 /* Build configuration list for PBXProject "SBCardValidation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D2B4FD21DACE41600228155;
+			productRefGroup = 2D2B4FDC1DACE41600228155 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D2B4FDA1DACE41600228155 /* SBCardValidation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D2B4FD91DACE41600228155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2B4FEE1DACE41600228155 /* LaunchScreen.storyboard in Resources */,
+				2D2B4FEB1DACE41600228155 /* Assets.xcassets in Resources */,
+				2D2B4FE91DACE41600228155 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D2B4FD71DACE41600228155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2B4FE31DACE41600228155 /* AppDelegate.m in Sources */,
+				2D2B4FE01DACE41600228155 /* main.m in Sources */,
+				2D2B4FFE1DACE4D500228155 /* SBCardValidateModel.m in Sources */,
+				2D2B4FFB1DACE47300228155 /* SBCardValidationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D2B4FE71DACE41600228155 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D2B4FE81DACE41600228155 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D2B4FEC1DACE41600228155 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D2B4FED1DACE41600228155 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D2B4FF01DACE41600228155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D2B4FF11DACE41600228155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D2B4FF31DACE41600228155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SBCardValidation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SANKARLAL.SBCardValidation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D2B4FF41DACE41600228155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SBCardValidation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SANKARLAL.SBCardValidation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D2B4FD61DACE41600228155 /* Build configuration list for PBXProject "SBCardValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2B4FF01DACE41600228155 /* Debug */,
+				2D2B4FF11DACE41600228155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D2B4FF21DACE41600228155 /* Build configuration list for PBXNativeTarget "SBCardValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2B4FF31DACE41600228155 /* Debug */,
+				2D2B4FF41DACE41600228155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D2B4FD31DACE41600228155 /* Project object */;
+}

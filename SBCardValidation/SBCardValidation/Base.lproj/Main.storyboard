@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wh9-Q8-3Cc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card Validation View Controller-->
+        <scene sceneID="Jjl-Al-Ryi">
+            <objects>
+                <viewController id="A64-As-dWG" customClass="SBCardValidationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mID-6a-eUW"/>
+                        <viewControllerLayoutGuide type="bottom" id="KLu-Qk-YJD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lm1-tt-mDa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Card Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk5-Ww-siH">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="qlj-4Q-6Zm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7HD-eI-XPM">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ae6-Hh-gvi"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="A64-As-dWG" id="4UD-fv-5Qj"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ll5-xA-qag">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Ihf-yg-f4T"/>
+                                    <constraint firstAttribute="height" constant="36" id="Rr3-fE-sGR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0W-2d-x26" userLabel="Line Lable">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="n3q-Br-hbJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVu-Pb-vrN">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1C5-P4-e0x"/>
+                                    <constraint firstAttribute="height" constant="40" id="L1S-al-etJ"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.19215686269999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="performClearButton" destination="A64-As-dWG" eventType="touchUpInside" id="xlr-z2-9Bh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid Card" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUl-dB-s47">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="270-KL-aOd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Uew-lI-grQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Card" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQp-a3-5t0">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="sRj-Wq-lSf"/>
+                                    <constraint firstAttribute="height" constant="45" id="zRk-1w-FvA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.19215686269999999" blue="0.3411764706" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kk5-Ww-siH" firstAttribute="leading" secondItem="Lm1-tt-mDa" secondAttribute="leading" constant="10" id="1iB-Ki-nHz"/>
+                            <constraint firstItem="Kk5-Ww-siH" firstAttribute="top" secondItem="mID-6a-eUW" secondAttribute="bottom" constant="30" id="2uP-2A-Bg1"/>
+                            <constraint firstItem="H0W-2d-x26" firstAttribute="leading" secondItem="Lm1-tt-mDa" secondAttribute="leading" constant="10" id="5RE-Jb-q41"/>
+                            <constraint firstItem="WVu-Pb-vrN" firstAttribute="top" secondItem="H0W-2d-x26" secondAttribute="bottom" constant="20" id="8J5-Ii-04I"/>
+                            <constraint firstItem="qQp-a3-5t0" firstAttribute="width" secondItem="SUl-dB-s47" secondAttribute="width" id="8eZ-hL-mjK"/>
+                            <constraint firstItem="WVu-Pb-vrN" firstAttribute="centerX" secondItem="Lm1-tt-mDa" secondAttribute="centerX" id="DDQ-BC-q91"/>
+                            <constraint firstAttribute="trailing" secondItem="Ll5-xA-qag" secondAttribute="trailing" constant="10" id="Frr-4f-wpf"/>
+                            <constraint firstAttribute="trailing" secondItem="qQp-a3-5t0" secondAttribute="trailing" constant="10" id="LKJ-eE-T1t"/>
+                            <constraint firstAttribute="trailing" secondItem="H0W-2d-x26" secondAttribute="trailing" constant="10" id="MPQ-Ry-FLe"/>
+                            <constraint firstItem="Ll5-xA-qag" firstAttribute="top" secondItem="Kk5-Ww-siH" secondAttribute="bottom" constant="2" id="OAF-Up-J0U"/>
+                            <constraint firstItem="H0W-2d-x26" firstAttribute="top" secondItem="7HD-eI-XPM" secondAttribute="bottom" id="SSM-yK-ytT"/>
+                            <constraint firstItem="qQp-a3-5t0" firstAttribute="height" secondItem="SUl-dB-s47" secondAttribute="height" id="V2R-yF-Nuk"/>
+                            <constraint firstItem="qQp-a3-5t0" firstAttribute="leading" secondItem="SUl-dB-s47" secondAttribute="trailing" constant="10" id="VuF-ey-jWy"/>
+                            <constraint firstAttribute="trailing" secondItem="7HD-eI-XPM" secondAttribute="trailing" constant="56" id="X9i-0j-5dN"/>
+                            <constraint firstItem="SUl-dB-s47" firstAttribute="leading" secondItem="Lm1-tt-mDa" secondAttribute="leading" constant="10" id="ZZe-yM-sDc"/>
+                            <constraint firstItem="SUl-dB-s47" firstAttribute="top" secondItem="WVu-Pb-vrN" secondAttribute="bottom" constant="20" id="aCy-xj-Ke9"/>
+                            <constraint firstItem="7HD-eI-XPM" firstAttribute="top" secondItem="Kk5-Ww-siH" secondAttribute="bottom" constant="8" id="enQ-x2-Df8"/>
+                            <constraint firstItem="7HD-eI-XPM" firstAttribute="leading" secondItem="Lm1-tt-mDa" secondAttribute="leading" constant="10" id="g1c-Nl-htW"/>
+                            <constraint firstAttribute="trailing" secondItem="Kk5-Ww-siH" secondAttribute="trailing" constant="10" id="nRO-KV-uT7"/>
+                            <constraint firstItem="qQp-a3-5t0" firstAttribute="top" secondItem="WVu-Pb-vrN" secondAttribute="bottom" constant="20" id="pRV-e8-3O7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F0a-KQ-dTP"/>
+                    <connections>
+                        <outlet property="cardNumberTextFld" destination="7HD-eI-XPM" id="vcD-DO-yuz"/>
+                        <outlet property="cardTypeImageView" destination="Ll5-xA-qag" id="6cH-mf-0Ox"/>
+                        <outlet property="cardTypeNameLabel" destination="qQp-a3-5t0" id="Vsy-qo-MId"/>
+                        <outlet property="validCardLable" destination="SUl-dB-s47" id="o27-Pa-B2L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VD1-ZO-tGu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954.4000000000001" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c6E-4y-GDW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wh9-Q8-3Cc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jss-h1-pq1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A64-As-dWG" kind="relationship" relationship="rootViewController" id="le2-Te-4v3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4V-5c-epZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015.2" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
